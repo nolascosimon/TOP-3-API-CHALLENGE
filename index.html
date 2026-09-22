@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flicker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="ambient"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <rect x="12" y="12" width="96" height="96" rx="22" fill="#0d0b10" />
+      <path d="M 60 28 C 47 46 42 58 46 70 C 49 80 58 84 60 84 C 62 84 71 80 74 70 C 78 58 73 46 60 28 Z" fill="#e7b549" />
+      <path d="M 60 52 C 53 62 51 69 54 75 C 56 79 60 81 60 81 C 60 81 64 79 66 75 C 69 69 67 62 60 52 Z" fill="#c1442e" />
+    </svg>
+    <h1>Flicker</h1>
+  </div>
+  <button id="watchlist-toggle" class="ticket-btn">
+    My List <span id="watchlist-count">0</span>
+  </button>
+</header>
+
+<div class="layout">
+
+  <aside class="genre-rail" id="genre-rail"></aside>
+
+  <main class="floor">
+
+    <section class="screen" id="screen">
+      <div class="screen-backdrop" id="screen-backdrop"></div>
+      <div class="screen-shade"></div>
+      <div class="screen-content">
+        <p class="screen-tag">Now screening</p>
+        <h2 class="screen-title" id="screen-title">Loading&hellip;</h2>
+        <p class="screen-meta" id="screen-meta"></p>
+        <p class="screen-overview" id="screen-overview"></p>
+        <div class="screen-actions">
+          <button id="save-btn" class="save-btn">Add to list</button>
+          <button id="trailer-btn" class="trailer-btn" hidden>Watch trailer</button>
+          <button id="cast-btn" class="cast-btn">Full details</button>
+          <button id="reel-btn" class="reel-btn">Shuffle the reel</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="shelf-wrap">
+      <div class="shelf-head">
+        <h3 id="shelf-heading">Popular right now</h3>
+      </div>
+      <div class="shelf" id="shelf"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<aside class="drawer" id="drawer" hidden>
+  <div class="drawer-head">
+    <h2>My list</h2>
+    <button id="drawer-close" class="icon-btn">&times;</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="modal-backdrop" id="cast-backdrop" hidden>
+  <div class="modal">
+    <button id="cast-close" class="icon-btn">&times;</button>
+    <h2 id="cast-modal-title"></h2>
+    <p id="cast-modal-meta"></p>
+    <p id="cast-modal-overview"></p>
+    <p id="cast-modal-cast"></p>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <p>Built by Simon Nolasco for ITCC14.1 &mdash; Team Movies and TV Shows.</p>
+  <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

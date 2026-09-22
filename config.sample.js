@@ -1,0 +1,3 @@
+const CONFIG = {
+  TMDB_API_KEY: "PASTE_YOUR_TMDB_API_KEY_HERE"
+};
