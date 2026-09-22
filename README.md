@@ -2,7 +2,7 @@
 
 A movie discovery app for the Third Party API Top 3 Challenge — Team Movies and TV Shows, built on TMDB.
 
-**Live app:** add your hosted link here
+**Live App:** [nolascolabtop3apichallenge.vercel.app](https://nolascolabtop3apichallenge.vercel.app/)
 **Author:** Simon Nolasco
 
 ## What it is
