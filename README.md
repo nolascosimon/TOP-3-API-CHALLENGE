@@ -11,12 +11,13 @@ Pick a genre from the rail on the left, and a shelf of posters fills in. Click a
 
 ## Files
 
-File,What's in it
-index.html,Page structure
-style.css,All styling
-app.js,Everything the app does
-config.sample.js,Template for your TMDB API key configuration
-config.js (local only),Created locally from config.sample.js to store your API key
+| File | What's in it |
+| :--- | :--- |
+| `index.html` | Page structure |
+| `style.css` | All styling |
+| `app.js` | Everything the app does |
+| `config.sample.js` | Template for your TMDB API key configuration |
+| `config.js` *(local only)* | Created locally from `config.sample.js` to store your API key |
 
 ## Running it
 
